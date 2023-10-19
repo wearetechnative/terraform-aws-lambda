@@ -34,7 +34,7 @@ The local setup (uploading of .zip) should be replaced by a dedicated S3 bucket 
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_default_exec_role"></a> [default\_exec\_role](#module\_default\_exec\_role) | git@github.com:TechNative-B-V/terraform-aws-module-iam-role | 81c45f4d87bace3e990e64b92030292ac2fc480c |
+| <a name="module_default_exec_role"></a> [default\_exec\_role](#module\_default\_exec\_role) | git@github.com:wearetechnative/terraform-aws-iam-role | 9a975f62956b6c4f2593c169d06d1cfe8aad36be |
 
 ## Resources
 
