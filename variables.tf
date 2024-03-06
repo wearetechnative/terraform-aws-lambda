@@ -92,4 +92,5 @@ variable "sqs_dlq_arn" {
 variable "layers" {
   description = "A list of Lambda Layer ARNS to be attached to the Lambda."
   type        = list(string)
+  default     = []
 }
