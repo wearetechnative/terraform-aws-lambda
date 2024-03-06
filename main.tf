@@ -37,7 +37,7 @@ resource "aws_lambda_function" "this" {
 
   kms_key_arn = var.kms_key_arn
 
-  layers                         = []
+  layers                         = var.layers
   memory_size                    = var.memory_size
   publish                        = true # always create new version
   reserved_concurrent_executions = 10   # prevent DDOS

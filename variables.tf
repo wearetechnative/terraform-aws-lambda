@@ -88,3 +88,8 @@ variable "sqs_dlq_arn" {
   description = "Dead Letter Queue for on_failure delivery of invocations"
   type        = string
 }
+
+variable "layers" {
+  description = "A list of Lambda Layer ARNS to be attached to the Lambda."
+  type        = list(string)
+}
