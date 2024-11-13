@@ -1,7 +1,7 @@
 module "default_exec_role" {
   count = !var.role_arn_provided ? 1 : 0
 
-  source = "git@github.com:wearetechnative/terraform-aws-iam-role?ref=9a975f62956b6c4f2593c169d06d1cfe8aad36be"
+  source = "git@github.com:wearetechnative/terraform-aws-iam-role?ref=0fe916c27097706237692122e09f323f55e8237e"
 
   role_name = local.role_name
   role_path = "/lambda/${local.role_name}/"
