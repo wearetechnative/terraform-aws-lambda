@@ -89,6 +89,12 @@ variable "sqs_dlq_arn" {
   type        = string
 }
 
+variable "reserved_concurrent_executions" {
+  description = "Amount of reserved concurrent executions for the lambda function."
+  type        = string
+  default     = "-1"
+}
+
 variable "layers" {
   description = "A list of Lambda Layer ARNS to be attached to the Lambda."
   type        = list(string)
