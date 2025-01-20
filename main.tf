@@ -40,7 +40,7 @@ resource "aws_lambda_function" "this" {
   layers                         = var.layers
   memory_size                    = var.memory_size
   publish                        = true # always create new version
-  #reserved_concurrent_executions = 10   # prevent DDOS
+  reserved_concurrent_executions = var.reserved_concurrent_executions
 
   timeout = var.timeout
 
