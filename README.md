@@ -1,4 +1,4 @@
-# Terraform AWS lambda ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-lambda/tflint.yaml?style=plastic)
+# Terraform AWS lambda ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-lambda/lint.yaml?branch=main&style=plastic&label=lint) ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-lambda/security-scan.yaml?branch=main&style=plastic&label=security)
 
 This module implements Lambda functionality in AWS with all known best practices with regards to logging and security.
 
