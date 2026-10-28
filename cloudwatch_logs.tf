@@ -8,9 +8,16 @@ resource "aws_cloudwatch_log_group" "cloudwatch_logs" {
 
 data "aws_iam_policy_document" "cloudwatch_logs" {
   statement {
-    sid = "AllowCloudWatchLogs"
+    sid = "AllowCreateLogStream"
 
-    actions = ["logs:PutLogEvents", "logs:CreateLogStream"]
+    actions = ["logs:CreateLogStream"]
+
+    resources = ["${aws_cloudwatch_log_group.cloudwatch_logs.arn}:*"]
+  }
+  statement {
+    sid = "AllowPutLogEvents"
+
+    actions = ["logs:PutLogEvents"]
 
     resources = ["${aws_cloudwatch_log_group.cloudwatch_logs.arn}:*"]
   }
